@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/58356a94f8358058f30004b5/solutions/python
+def fly_by(lamps, drone):   
+  if len(drone) >= len(lamps):         
+    return len(lamps) * "o"    
+  n = len(drone) * "o"      
+  n1 = len(lamps) - len(drone)     n2 = n1 * "x"     
+  return n + n2 
