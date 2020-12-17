@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/56a25ba95df27b7743000016/solutions/python/me/best_practice
+def validate_code(code):
+    code = str(code)
+    if code[0] in '123':
+        return True
+    else:
+        return False
