@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/56f695399400f5d9ef000af5
+def correct_tail(body, tail):
+     sub = body.substr(len(body)-len(tail.length)
+        if sub = tai:
+    return True
+        else:
+    return False
