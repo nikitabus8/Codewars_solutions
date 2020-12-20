@@ -1,0 +1,15 @@
+#https://www.codewars.com/kata/57ee2a1b7b45efcf700001bf
+xdef cat_mouse(x,j):
+    dog = x.find("D")
+    cat = x.find("C")
+    mouse = x.find("m")
+    if cat == -1 or dog == -1 or mouse == -1:
+        return "boring without all three"
+    if (cat < dog < mouse or cat > dog > mouse) and abs(cat - mouse) <= j:
+        return "Protected!"
+    if (cat < dog < mouse or cat > dog > mouse) and abs(cat - mouse) > j:
+        return "Escaped!"
+    if abs(cat - mouse) <= j:
+        return "Caught!"
+    else:
+        return "Escaped!"
